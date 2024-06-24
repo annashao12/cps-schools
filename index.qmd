@@ -4,7 +4,9 @@ execute:
   echo: false
 ---
 
-Chicago Public Schools (CPS) offers students 'school choice,' which is the ability to choose which school they would like to attend. Schools have specific and unique offerings, often bringing in students of various backgrounds from across the city. This project seeks to explore the present situations of CPS high schools in the context of school choice. 
+Chicago Public Schools (CPS) is one of the few school districts in the US that offer students a significant level of 'school choice,' which is the ability to choose which school they would like to attend. The data used in this project was pulled from the Chicago Data Portal and the Chicago Public Schools website. Then, school and student population data were used to visualize the associations from school type. Although charter schools are the most common type of school, more students in total attended neighborhood schools. 
+
+<!--Schools have specific and unique offerings, often bringing in students of various backgrounds from across the city. This project explored the present situations of CPS high schools in the context of school choice.--> 
 
 ```{r}
 #| label: setup
@@ -14,7 +16,7 @@ library(tidyverse)
 library(knitr)
 ```
 
-```{r}
+```{r fig.align = "center"}
 #| label: double bar plot
 
 knitr::include_graphics("graphs/type_pop.png")
