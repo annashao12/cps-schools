@@ -1,0 +1,6 @@
+---
+title: "Sources"
+format: html
+---
+
+The data used for this project were all open-source. They came predominantly from the [Chicago Data Portal](https://data.cityofchicago.org/) and [Chicago Public Schools](https://www.cps.edu/). Multiple data sets were used from the aforementioned websites and schools were matched by School ID across the data sets. Only schools listed in [this data set](https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Progress-Reports-SY2/2dn2-x66j/about_data) were included in the analysis. Additional schools that may have been present in other data sets were not considered.

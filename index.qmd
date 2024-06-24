@@ -1,0 +1,22 @@
+---
+title: "School Choice within CPS High Schools"
+execute:
+  echo: false
+---
+
+Chicago Public Schools (CPS) offers students 'school choice,' which is the ability to choose which school they would like to attend. Schools have specific and unique offerings, often bringing in students of various backgrounds from across the city. This project seeks to explore the present situations of CPS high schools in the context of school choice. 
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(knitr)
+```
+
+```{r}
+#| label: double bar plot
+
+knitr::include_graphics("graphs/type_pop.png")
+```
+
