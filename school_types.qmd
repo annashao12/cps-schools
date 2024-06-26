@@ -1,0 +1,16 @@
+---
+title: "Overview of School Types"
+execute:
+  echo: false
+---
+
+```{r}
+library(knitr)
+```
+
+```{r fig.align = "center"}
+#| label: plots
+
+knitr::include_graphics("graphs/n_pop_together_2.png")
+knitr::include_graphics("graphs/type_pop.png")
+```

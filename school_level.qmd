@@ -1,0 +1,79 @@
+---
+title: "Overview at the School-Level"
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+#| label: setup
+library(tidyverse)
+library(knitr)
+library(plotly)
+library(ggrepel)
+library(readr)
+library(sf)
+```
+
+```{r fig.align = "center"}
+#| label: boxplot
+
+knitr::include_graphics("graphs/pop_each_final_2.png")
+```
+
+```{r fig.align = "center"}
+#| label: load data
+#| warning: false
+
+### importing and tidying data
+hs <- read_csv("data/school_progress_2024.csv", show_col_types = F) %>%
+  filter(Primary_Category == "HS")
+
+# arranging school type factors
+hs$School_Type <- as.factor(hs$School_Type)
+type <- hs %>%
+  summarize(num_schools = n(), .by = School_Type) %>%
+  arrange(num_schools) %>%
+  mutate(School_Type = factor(School_Type, levels = unique(School_Type), ordered = T))
+
+hs <- hs %>%
+  select(c(Short_Name, School_Type, School_Longitude, School_Latitude)) %>%
+  mutate(School_Type = factor(School_Type, 
+                              levels = levels(type$School_Type),
+                              ordered = TRUE)) 
+
+# creating descriptions for hover above text
+hs <- as.data.frame(hs)
+hs$Desc <- paste0(hs$Short_Name, "\n", hs$School_Type) 
+
+# chicago map graphic
+chi_map <- read_sf("https://raw.githubusercontent.com/thisisdaryn/data/master/geo/chicago/Comm_Areas.geojson") 
+```
+
+```{r}
+#| label: map
+#| warning: false
+
+a <- ggplot(chi_map) + 
+  geom_sf(data = chi_map, fill = "ivory", color = "ivory") + 
+  geom_sf(data = chi_map, color = "white") +
+  geom_sf_text(aes(label = area_numbe,
+                   text = community)) +
+  geom_point(data = hs, 
+             aes(x = School_Longitude, y = School_Latitude, 
+                 color = School_Type, text = Desc)) +
+  theme_dark() +
+  labs(x = "Longitude",
+       y = "Latitude",
+       title = "Location of Schools by School Type",
+       color = "Type") +
+  theme(plot.title = element_text(color='black',face='bold'),
+        plot.subtitle = element_text(color='black'),
+        axis.text = element_text(color='black',face='bold'),
+        axis.title = element_text(color='black',face='bold'),
+        legend.text = element_text(color='black',face='bold'),
+        legend.title = element_text(color='black',face='bold'))
+  
+ggplotly(a, tooltip = "text")
+```
+
