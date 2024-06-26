@@ -2,8 +2,14 @@
 title: "About"
 ---
 
-My name is Anna Shao. I will be a first-year college student for the 2024-2025 school year. My GitHub is [here](https://github.com/annashao12). Feel free to contact me at shaoanna2013\@gmail.com.
+## About Me 
+
+My name is Anna Shao. I will be a first-year college student at Harvard College for the 2024-2025 school year. My GitHub is [here](https://github.com/annashao12). Feel free to contact me at shaoanna2013\@gmail.com.
+
+## About the Project 
 
 If you are interested in seeing the process behind this project, the GitHub repo for this project is [here](https://github.com/annashao12/cps-schools).
+
+## Credits
 
 This project was created as part of [Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/).

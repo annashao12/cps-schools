@@ -1,0 +1,21 @@
+---
+title: "Differences by School Type"
+execute:
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+library(knitr)
+```
+
+```{r fig.align = "center"}
+#| label: plots
+
+knitr::include_graphics("graphs/space_use.png")
+knitr::include_graphics("graphs/grad_rate.png")
+knitr::include_graphics("graphs/grad_rate_no_outliers.png")
+knitr::include_graphics("graphs/grad_time_all.png")
+```

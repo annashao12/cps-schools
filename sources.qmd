@@ -3,4 +3,17 @@ title: "Sources"
 format: html
 ---
 
-The data used for this project were all open-source. They came predominantly from the [Chicago Data Portal](https://data.cityofchicago.org/) and [Chicago Public Schools](https://www.cps.edu/). Multiple data sets were used from the aforementioned websites and schools were matched by School ID across the data sets. Only schools listed in [this data set](https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Progress-Reports-SY2/2dn2-x66j/about_data) were included in the analysis. Additional schools that may have been present in other data sets were not considered.
+## Data Sets
+
+The data used for this project came from the [Chicago Data Portal](https://data.cityofchicago.org/) and [Chicago Public Schools](https://www.cps.edu/)(CPS).
+
+The specific data sets that were used are as follows:
+
+-   [School Progress SY2324](https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Progress-Reports-SY2/2dn2-x66j/about_data) - Data Portal
+-   [School Profile Information SY2324](https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Profile-Information-/cu4u-b4d9/data_preview) - Data Portal
+-   [Space Utilization](https://www.cps.edu/services-and-supports/school-facilities/facility-standards/) - CPS
+-   [Graduation Rate](https://www.cps.edu/about/district-data/metrics/) - CPS
+
+## Tidying the Data
+
+Schools were matched by School ID across the data sets. Only schools listed in the 'School Progress SY2324' were included in the analysis. Furthermore, some school-level data was unavailable or limited in specific data sets so analyses involving such data sets excluded certain types of schools.

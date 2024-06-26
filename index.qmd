@@ -1,11 +1,9 @@
 ---
 title: "School Choice within CPS High Schools"
+author: Anna Shao
 execute:
   echo: false
 ---
-
-Chicago Public Schools (CPS) is one of the few school districts in the US that offer students a significant level of 'school choice,' which is the ability to choose which school they would like to attend. The data used in this project was pulled from the Chicago Data Portal and the Chicago Public Schools website. Then, school and student population data were used to visualize the associations from school type. Although charter schools are the most common type of school, more students in total attended neighborhood schools. 
-
 <!--Schools have specific and unique offerings, often bringing in students of various backgrounds from across the city. This project explored the present situations of CPS high schools in the context of school choice.--> 
 
 ```{r}
@@ -17,8 +15,10 @@ library(knitr)
 ```
 
 ```{r fig.align = "center"}
-#| label: double bar plot
+#| label: plot
 
-knitr::include_graphics("graphs/type_pop.png")
+knitr::include_graphics("graphs/type_pop_scatter.png")
 ```
+
+As the fourth-largest school district with over 300,000 students, Chicago Public Schools (CPS) has offered students a significant level of 'school choice,' which is the ability to choose which school they would like to attend. The data used in this project was pulled from the Chicago Data Portal and the Chicago Public Schools website. Then, school and student data were used to visualize their associations with the type of school. Although charter schools are the most common type of school, more students in total attended neighborhood schools. 
 

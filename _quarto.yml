@@ -7,6 +7,14 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - text: Analysis
+        menu:
+          - href: school_types.qmd
+            text: Types of School 
+          - href: school_level.qmd
+            text: School-Level
+          - href: differences.qmd
+            text: Differences among Schools
       - href: sources.qmd
         text: Sources
       - about.qmd
