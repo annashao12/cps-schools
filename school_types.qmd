@@ -1,5 +1,5 @@
 ---
-title: "Overview of School Types"
+title: "Type of School"
 execute:
   echo: false
 ---
@@ -8,9 +8,43 @@ execute:
 library(knitr)
 ```
 
+## Overall Types
+
+**Chicago Public Schools are divided into three overall types:**
+
+-   For residents in an attendance boundary
+-   Open to any student residing in Chicago
+-   Choice programs in which admissions criteria varies by school
+    -   Some are based on test scores and 7th grade performance
+    -   Some use a computerized lottery system to determine which students are admitted to the school
+
+## Comparison between Types
+
+**Most students attend neighborhood, charter, and selective enrollment schools.** Other school types are not as common in number nor attended by as many CPS students.
+
 ```{r fig.align = "center"}
 #| label: plots
 
 knitr::include_graphics("graphs/n_pop_together_2.png")
 knitr::include_graphics("graphs/type_pop.png")
 ```
+
+## Specific Types
+
+Some schools can be classified into several of the following categories. *The analysis was based on the primary category within the School Progress report provided by CPS.*
+
+-   **Neighborhood**: Within a neighborhood attendance boundary. May still accept students from outside the boundary.
+
+-   **Citywide-Option**: No neighborhood attendance boundary. Lottery based.
+
+-   **Selective enrollment**: Provide academically advanced students with challenging college preparatory experience. Students must take an admissions test.
+
+-   **Magnet**: Offer specialized programs, attracting students from across the city.
+
+-   **Military academy:** Operate in a structured environment. Students wear uniforms and take part in leadership and co-curricular activities. Lottery based.
+
+-   **Small**: Has smaller student populations.
+
+-   **Charter**: Independently operated schools. Can exercise autonomy over many student-related policies.
+
+-   **Contract**: Managed by external operators. Usually have contracts to operate for five-year terms.

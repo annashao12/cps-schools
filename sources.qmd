@@ -5,7 +5,7 @@ format: html
 
 ## Data Sets
 
-The data used for this project came from the [Chicago Data Portal](https://data.cityofchicago.org/) and [Chicago Public Schools](https://www.cps.edu/)(CPS).
+The data used for this project came from the [Chicago Data Portal](https://data.cityofchicago.org/) and [Chicago Public Schools](https://www.cps.edu/) (CPS).
 
 The specific data sets that were used are as follows:
 

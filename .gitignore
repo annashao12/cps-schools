@@ -12,7 +12,7 @@ _publish.yml
 *_site
 
 *RProj
-*.R
 *.docx
 
 data_messy/
+scripts_archive/

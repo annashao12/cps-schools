@@ -1,5 +1,5 @@
 ---
-title: "Overview at the School-Level"
+title: "At the School-Level"
 execute:
   echo: false
 ---
@@ -15,11 +15,19 @@ library(readr)
 library(sf)
 ```
 
+Individual schools split by school type were investigated.
+
+## Student Body Size
+
 ```{r fig.align = "center"}
 #| label: boxplot
 
 knitr::include_graphics("graphs/pop_each_final_2.png")
 ```
+
+The median student population size was less than 1,000 students for all school types except for selective enrollment schools. School types with a smaller number of schools tend to have similar population sizes. Meanwhile, neighborhood and magnet school sizes varied more widely.
+
+## Location
 
 ```{r fig.align = "center"}
 #| label: load data
@@ -77,3 +85,6 @@ a <- ggplot(chi_map) +
 ggplotly(a, tooltip = "text")
 ```
 
+&nbsp;
+
+Each section labeled with a number indicates one of Chicago’s 77 community areas. Most community areas offer at least one public high school, but school locations are not necessarily evenly distributed, potentially reflecting community needs and population density.

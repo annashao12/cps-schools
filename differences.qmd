@@ -11,11 +11,35 @@ library(tidyverse)
 library(knitr)
 ```
 
+Beyond differences due to school offerings and student body size, there were further differences based on space use and graduation rate. Selective enrollment schools tend to have the highest graduation rates (\>90%) while also being most likely to be either overcrowded or efficiently used. Other school types could support more students, but students do not choose to attend those schools.
+
+## Building Space Utilization
+
 ```{r fig.align = "center"}
-#| label: plots
+#| label: space
 
 knitr::include_graphics("graphs/space_use.png")
+```
+
+Space use may indicate how attracted students are to certain school types. Generally, students prefer to attend selective enrollment, magnet, and career academy schools over their neighborhood school. Meanwhile, military academies and small schools do not get as much interest.
+
+## Graduation Rate (from 2023)
+
+```{r fig.align = "center"}
+#| label: grad rate
+
 knitr::include_graphics("graphs/grad_rate.png")
 knitr::include_graphics("graphs/grad_rate_no_outliers.png")
+```
+
+There are significant differences in graduation rates due to school type. This may be due to various factors, such as the students' socioeconomic background and the support resources available to them.
+
+## Graduation Rate Over Time
+
+```{r fig.align = "center"}
+#| label: over time
+
 knitr::include_graphics("graphs/grad_time_all.png")
 ```
+
+The median high school graduation rate by school type has been greatly variable from 2022 to 2023, with some school types increasing or decreasing significantly. However, overall, COVID-19 has not significantly impacted the graduation rate in the CPS district.

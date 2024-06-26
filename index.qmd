@@ -17,8 +17,7 @@ library(knitr)
 ```{r fig.align = "center"}
 #| label: plot
 
-knitr::include_graphics("graphs/type_pop_scatter.png")
+knitr::include_graphics("graphs/type_pop_scatter_2.png")
 ```
 
-As the fourth-largest school district with over 300,000 students, Chicago Public Schools (CPS) has offered students a significant level of 'school choice,' which is the ability to choose which school they would like to attend. The data used in this project was pulled from the Chicago Data Portal and the Chicago Public Schools website. Then, school and student data were used to visualize their associations with the type of school. Although charter schools are the most common type of school, more students in total attended neighborhood schools. 
-
+As the fourth-largest school district in the US with over 300,000 students, Chicago Public Schools (CPS) has offered students a significant level of ‘school choice,’ which is the ability to choose which school they would like to attend. The data used in this project was pulled from the Chicago Data Portal and the Chicago Public Schools website. Then, I visualized the school and student data by type of school. Although charter schools are the most common school type, more students in total attended neighborhood schools.
