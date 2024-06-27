@@ -45,7 +45,7 @@ ggplot(space_compiled, aes(x = School_Type, y = perc, fill = `Space Use Status`)
   labs(x = "School Type",
        y = "Proportion",
        title = "Space Use Status by School Type",
-       caption = "Several school types were omitted either because data was unavailable or there were fewer than 10 samples.\nThe label on each portion of the bars indicate the number of schools in that category.",
+       caption = "Several school types were omitted either because data was unavailable or there were few samples.\nThe label on each portion of the bars indicate the number of schools in that category.",
        subtitle = "Proportion of underutilized selective enrollment schools is smallest compared to other school types") +
   theme(legend.position = "top",
         plot.title = element_text(color='black',face='bold'),
